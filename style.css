@@ -1,0 +1,198 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #0a0913;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: transparent;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+
+#menu-icon{
+    display: none;
+} 
+
+#menu-icon{
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon-action{
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 8%;
+}
+
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-text h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 24px;
+    letter-spacing: 4px;
+}
+
+.hero-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hero-text p {
+    font-size: 80%;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+.hero-img img{
+    width: 400px;
+    margin: 10% 0 0 10%;
+    height: auto;
+    transition: all 2.5s ease-in-out;
+}
+
+.hero-img img:hover {
+    width: 450px;
+    opacity: 0.6;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: #03459d;
+    color: aliceblue;
+    border: 1px solid white;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .1s ease;
+}
+
+.hero-text a:hover {
+    background-color: #0563e1;
+    color: aliceblue;
+    border: 2px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text a.portfolio{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left:  20px;
+}
+
+.hero-text a.portfolio i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.hero-text a.portfolio:hover {
+    background-color: #0563e1;
+    color: aliceblue;
+    border: 2px solid white;
+    transform: translateX(8px);
+}
+
+
+.icons {
+    position: absolute;
+    top: 50vh;
+    padding: 0 3%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    transition: all 0.5s ease;
+    color: #4d4d4d;
+}
+
+.icons i:hover{
+    color: aliceblue;
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    background-color: #21383d;
+    border-radius: 33px;
+    transition: all .5s ease;
+}
+
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
