@@ -1,0 +1,96 @@
+@media (max-width:992px){
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .hero-text{
+        padding-top: 0;
+    }
+
+    .hero-img{
+        text-align: center;
+    }
+
+    .hero-img img{
+        width: 80%;
+        margin: 10% 0 0 10%;
+    }
+
+    .hero-text p {
+        font-size: 70%;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .scroll-down{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+
+    .logo img {
+        max-height: 40px;
+    }
+    
+
+    .menu-icon-action{
+        display: block;
+    }
+
+    #menu-icon{
+        display: block;
+    }
+
+    .hero-text{
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .hero-img img {
+        margin: 0;
+    }
+
+    .hero {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text p {
+        font-size: 80%;
+        margin-bottom: 40px;
+        line-height: 1.9;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #021719ef;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all .5s ease-out;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .navlist a {
+        display: block;
+        margin: 7px 0;
+    }
+
+    #menu-toggle:checked + label.menu-icon-action + ul{
+        right: 0;
+    }
+
+}
